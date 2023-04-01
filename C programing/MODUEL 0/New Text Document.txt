@@ -1,0 +1,83 @@
+C programing Compailer
+	steps1: google ==> download download mingw for windows
+	steps2: https://sourceforge.net/ ai link e jabo
+	
+install korbo 
+	install korar por 
+		step-2 select korbo ==> mark for install 
+		step-5 select korbo ==> mark for install 
+
+installation => apply change ==> apply
+======================================================================
+VS Code package Install 
+extension 
+	1. c/c++ microsoft ==> install
+	2. c/c++ Extension Pack ==> install
+	3. code runner install 
+	4. code runner ==> settings ==> right click ==> extension settings
+			a. code runner run in the terminal 
+			b. save all file before run
+			c. edit in the settings.json
+				i. c and cpp ke copy kore last e niye gelam 
+			"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        		"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+			aigul aktu edit korte hobe 
+			  "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
+        		"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
+
+	5. c c++ code run kora jonno 
+		a. This pc ==> c drive ==> MingW ==>bin (C:\MinGW\bin) path copy korbo 
+		b. windown button ==> env enter button ==> environment variable ==> path new(C:\MinGW\bin) ==> ok => ok => ok	
+
+
+	6. now run this code 
+		#include<stdio.h>
+			int main(){
+			printf("Hello Bangladesh");
+			return 0;
+			}
+
+	7. Output r ektu fency korar jonno amder jete hobe 
+		a. vs code => extension ==> code runner ==> settings ==> extension keyboard shortcut ==> custom comand => ctrl + alt + f9 => enter
+
+	8. fency style e output dekhar jonno (< input.txt > output.txt) add korlam
+		 "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe < input.txt > output.txt",
+        	"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe < input.txt > output.txt",
+
+	9. vs code same file er moddey input.txt and output.txt name 2 ta file banabo
+
+	10. 
+	input.txt => right click ==> right split 
+	output.txt => bottom split
+
+
+
+
+
+
+===================================================================
+settings.json er moddey aigula likte hobe
+ "code-runner.runInTerminal": true,
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c11",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "code-runner.terminalRoot": "/",
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+===================================================================
+
+
+
+	"C_Cpp.default.cppStandard": "c++20",
+	"C_cpp.default.cStandard": "c11",
+	"terminal.integreated.defaultProfile.windows": "Git Bash",
+	"code_runner.runInTerminal": true, //age thekei ace
+	"code_runner.terminalRoot": "/",
+	"code_runner.saveFileBeforeRun": true, 
+	"code_runner.saveAllFilesBeforeRun": true,
+	"windows.zoomLevel": 1,
+	"code_runner.languageIdToFileExtensionMap" :{
+		"bat": ".bat",
+		"powersell": ".ps1",
+		"typecript" => ".ts"
+}
