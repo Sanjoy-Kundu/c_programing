@@ -1,4 +1,3 @@
-Hello world 
-I want to be a programmer
-Im a Computer Enginner.			 Im from Madaripur
- Postal code: 7902.
+105
+20.5
+d
